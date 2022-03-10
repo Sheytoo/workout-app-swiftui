@@ -11,7 +11,8 @@ import SwiftUI
 struct WorkoutApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(WorkoutViewModel())
         }
     }
 }
